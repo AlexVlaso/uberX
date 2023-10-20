@@ -1,0 +1,293 @@
+@media( max-width:1200px )
+	header
+		.menu
+			&_link
+				font-size: 12px
+			&_item
+				padding-right: 28px
+		.subheader
+			&_phone
+				font-size: 18px
+	.promo
+		.header
+			font-size: 50px
+		&_subheader
+			font-size: 30px
+
+	.advantages
+		&_item
+			align-items: flex-start
+			.advantages_desc
+				width: 350px    
+	.mobile
+		&_item
+			width: 290px
+			height: 270px
+	.choise
+		.car
+			width: 500px
+			margin-top:100px 
+	.requirement
+		&_block
+			width: 470px
+	footer
+		.footer
+			&_line
+				width: 250px  
+			&_menu
+				padding: 0 10px
+			&_submenu
+				a
+					font-size: 10px
+			
+@media( max-width: 991px )     
+	header
+		.menu
+			&_link
+				font-size: 10px
+			&_item
+				padding-right:10px         
+	.promo
+		&_desc
+			font-size: 18px
+	.advantages
+		&_item
+			flex-direction: column
+			.round
+				margin: 0 auto
+			.advantages_subheader 
+				margin-top:10px
+	.mobile
+		&_item
+			width: 210px
+			height: 230px
+			&_header
+				font-size: 18px
+	.choise
+		.car
+				width: 450px
+				margin-top: 120px
+	.requirement
+		&_block
+			width: 360px
+	footer
+		.footer
+			&_line
+				width: 200px
+			&_menu
+				padding: 0
+				a
+					font-size: 12px 
+			&_submenu
+				margin-top:10px 
+				a
+					font-size:8px 
+			&_wrapper
+				margin-top: 15px
+			&_wrapper > div
+				&:nth-child(3)
+					flex-direction: column
+					align-items: flex-end
+					justify-content: center
+					a
+						margin-top: 2px
+
+@media ( max-width: 767px )
+	header
+		.menu
+			position: fixed
+			top: 0
+			left:-100%
+			flex-direction: column
+			width:50%
+			height: 100vh
+			background-color: rgba(0,0, 0, 0.7)
+			padding: 0
+			transition: 0.7s all
+			align-items: center
+			justify-content: center
+			z-index: 3
+			&_item
+				border: 0
+				margin-top: 20px
+				padding: 0
+			&_link
+				font-size: 18px
+			&_active
+				left: 0
+		.hamburger
+			position: absolute
+			display: block
+			top: 50%
+			transform: translateY(-50%)
+			right: 11px
+			width:26px
+			height: 15px
+			
+			span
+				display: block
+				margin-top:3px
+				height:2px
+				background-color: white
+				transition: 0.7s all
+			&_active
+				span
+					&:first-child
+						transform: rotate(45deg) translateY(3px)
+					&:nth-child(2)
+						display: none
+					&:last-child
+						transform: rotate(-45deg) translateY(-3px)
+		.subheader
+			&_logo
+				width: 100%
+			&_phone
+				display: block
+				margin-top: 10px 
+				font-size: 16px
+				text-align: center
+			&_btn
+				display: block
+				margin: 0 auto
+				margin-top:5px  
+				width: 150px
+				height: 40px
+				border: 3px solid rgba(0,0,0,.07)
+				border-radius: 4px
+			.xs_hidden
+				display: none
+			.xs_visible
+				display: block
+	.promo
+		.header
+			font-size: 62px
+		&_subheader
+			line-height: 35px
+			margin-top:25px 
+			font-size: 35px
+		&_desc
+			display: none
+	.advantages
+		&_item
+			.advantages_desc
+				margin:0 auto
+	.mobile
+		&_item
+			&_header
+				font-size: 15px
+	footer
+		.footer
+			&_wrapper
+				flex-direction: column
+			&_wrapper > div
+				width:100%
+				&:nth-child(1)
+					order: 2
+				&:nth-child(2)
+					order: 1
+				&:nth-child(3)
+					order: 3
+					flex-direction: row
+					align-content: center
+			&_line
+				width: 300px
+			&_menu
+				a
+					font-size: 20px
+			&_submenu
+				a
+					font-size: 15px
+			&_language
+				font-size: 15px
+			&_social
+				justify-content: center
+				margin-top:10px
+				.link
+					margin:7px
+
+@media ( max-width: 575px  )
+	header
+		nav
+			height: 30px
+		.menu
+			width: 70%
+		.subheader
+			min-height: 62px
+			padding-bottom: 10px
+			&_logo
+				margin-top:23px 
+			&_official
+				display: none
+			&_phone
+				font-size: 12px	
+			&_btn
+				width: 110px
+				height: 22px
+				padding: 0
+				font-size: 10px
+				ine-height: 22px
+	.promo
+		min-height: 400px
+		padding-bottom: 35px
+		.header
+			font-size: 30px
+		&_subheader
+			font-size: 20px
+			line-height: 30px
+	.header
+		font-size: 16px	
+	.subheder
+		font-size: 14px
+	.advantages
+		&_item
+			.advantages_desc 
+				width: 300px
+			.advantages_text
+				font-size: 15px
+	.mobile
+		&_item
+			width: 290px
+			height: 254px
+			&_header
+				font-size: 18px
+	.choise
+		min-height: 390px
+		background: #070716
+		padding:25px 0 31px 0  
+		.black_bg
+			height: 0
+			display: none
+		.car
+			margin-top: 36px
+			width: 300px
+		&_desc
+			margin-top:23px 
+			color: #FFFFFF
+			font-size: 17px
+	.requirement
+		&_block
+			width:300px
+		&_header
+			font-size: 16px
+		&_desc
+			font-size: 14px
+		&_list
+			li
+				font-size: 14px
+	.world
+		min-height: 360px
+		
+		&_cities
+			font-size: 12px
+	
+	footer
+		.footer
+			&_line
+				width: 250px	
+			&_menu
+				a
+					font-size: 14px
+			&_submenu
+				flex-wrap: wrap
+				a
+					font-size: 13px			
